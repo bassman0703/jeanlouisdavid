@@ -1,15 +1,17 @@
 #htopBarBlock {
     background-color: #000;
-    height: 40px;
-    padding-top: 10px;
+    height: 46px;
 }
-.nav-text{
+
+.nav-text {
     font-size: 19px;
 }
-.footer_bg_color{
-    background-color:#000000;
+
+.footer_bg_color {
+    background-color: #000000;
 }
-.foeter-but{
+
+.foeter-but {
     background-color: #d4b26a;
     display: inline-block;
     height: 60px;
@@ -19,7 +21,13 @@
     width: 200px;
     padding: 1%;
 }
+
 .featured-icon-box.icon-align-before-content.style3 {
     padding: 18px 0;
     border-bottom: 1px solid #3b3b3b;
+}
+
+.text_center {
+    text-align: left;
+    margin-left: 20px;
 }

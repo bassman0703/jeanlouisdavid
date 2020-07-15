@@ -4,8 +4,7 @@
 <head>
     <title>Jean Louis David – le coiffeur expert de vos cheveux</title>
 
-    <meta name="description"
-        content="Retrouvez sur Jean Louis David tous nos conseils de pro : soins, coiffures, tendances et nouvelles collections. Rdv en salon pour profiter de nos services" />
+    <meta name="description" content="Retrouvez sur Jean Louis David tous nos conseils de pro : soins, coiffures, tendances et nouvelles collections. Rdv en salon pour profiter de nos services" />
     <meta name="keywords" content="" />
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -18,19 +17,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" type="image/x-icon" href="/web/skins/images/favicon.ico" />
-
+    <link rel="stylesheet" href="/path/to/bpg-arial.min.css">
+    <link rel="stylesheet" href="/node_modules/bpg-arial/css/bpg-arial.min.css">
+    <link rel="stylesheet" href="/node_modules/bpg-arial-caps/css/bpg-arial-caps.min.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic,900italic"
-        rel="stylesheet" type="text/css">
-    <link
-        href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic&subset=latin,latin-ext"
-        rel="stylesheet" type="text/css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-        type="text/css">
-        <link rel="stylesheet" href="css/bootstrap-reboot.css">
-        <link rel="stylesheet" href="css/bootstrap-grid.css">
-        <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic,700italic,900italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="wb-auto-css.css">
+    <link rel="stylesheet" type="text/css" href="wb-auto-css.css">
+
+
 
     <meta property="fb:app_id" content="354749077913860" />
     <meta property="og:site_name" content="jeanlouisdavid.com" />
@@ -41,32 +43,33 @@
     <meta property="fb:admins" content="143555545703868" />
 
 
-    <link rel="preload" as="style" href="https://static1.jeanlouisdavid.com/generated/224/wb-auto-css.css">
-    <link rel="stylesheet" type="text/css" href="https://static1.jeanlouisdavid.com/generated/224/wb-auto-css.css" />
 
 
     <!--[if lt IE 9]>
 <script src="/library/javascript/html5shiv/html5shiv.js"></script>
 <![endif]-->
 
-    <script type="text/javascript"
-        src="https://salons.jeanlouisdavid.com/jean-louis-david-search/1.0/client.js"></script>
+    <script type="text/javascript" src="https://salons.jeanlouisdavid.com/jean-louis-david-search/1.0/client.js"></script>
 
     <link rel="preload" as="script" href="https://static1.jeanlouisdavid.com/generated/224/wb-auto-js.js">
     <script type="text/javascript" src="https://static1.jeanlouisdavid.com/generated/224/wb-auto-js.js"></script>
 
     <script type="text/javascript">
-
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
                 (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
         var custom_dimensions = {};
 
-        ga(function () {
+        ga(function() {
             WB.Tracking.createTracker({
                 "debugMode": false,
                 "trackingId": "UA-32861718-1",
@@ -87,11 +90,10 @@
                 "customDimensions": custom_dimensions
             });
         });
-
     </script>
     <script type="text/javascript">
         // Is JS enabled? Is it a touch device?
-        var init = function () {
+        var init = function() {
             var htmlTag = document.getElementsByTagName('html')[0];
             htmlTag.className = (htmlTag.className + ' ' || '') + 'hasJS';
             if ('ontouchstart' in document.documentElement)
@@ -104,13 +106,22 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-        !function (f, b, e, v, n, t, s) {
-            if (f.fbq) return; n = f.fbq = function () {
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            }; if (!f._fbq) f._fbq = n;
-            n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
-            t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
         }(window,
             document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '374007573189567');
@@ -121,14 +132,22 @@
     <!-- End Facebook Pixel Code -->
 
     <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-BXLD');</script>
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-BXLD');
+    </script>
     <!-- End Google Tag Manager -->
 </head>
 
@@ -156,11 +175,19 @@
     <!-- Begin comScore Tag -->
     <script type="text/javascript">
         var _comscore = _comscore || [];
-        _comscore.push(
-            { c1: "2", c2: "6035191" }
+        _comscore.push({
+                c1: "2",
+                c2: "6035191"
+            }
 
         );
-        (function () { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); }
+        (function() {
+                var s = document.createElement("script"),
+                    el = document.getElementsByTagName("script")[0];
+                s.async = true;
+                s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+                el.parentNode.insertBefore(s, el);
+            }
 
         )();
     </script>
@@ -170,9 +197,7 @@
     <!-- End comScore Tag -->
     <div class="barber__link">
         <a href="https://reservations.jeanlouisdavid.com">
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px" y="0px" width="20px" height="20px" viewBox="0 0 485.213 485.212"
-                style="enable-background:new 0 0 20 20;" xml:space="preserve">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 485.213 485.212" style="enable-background:new 0 0 20 20;" xml:space="preserve">
                 <g>
                     <path d="M60.652,75.816V15.163C60.652,6.781,67.433,0,75.817,0c8.38,0,15.161,6.781,15.161,15.163v60.653
                         c0,8.38-6.781,15.161-15.161,15.161C67.433,90.978,60.652,84.196,60.652,75.816z M318.424,90.978
@@ -198,18 +223,14 @@
 
     <div id="wb_body">
         <div id="wb_wrapper">
-            <div id="htopBarBlock" class="fullWidth" data-tracking-category="Header"
-                data-tracking-action="Clic rubriques">
+            <div id="htopBarBlock" class="fullWidth" data-tracking-category="Header" data-tracking-action="Clic rubriques">
                 <div class="wide78">
                     <div id="topBar" class="searchActive">
                         <ul class="topBarMenu booking">
                             <li>
                                 <a href="https://reservations.jeanlouisdavid.com" target="_blank">
                                     <div>
-                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-                                            height="20px" viewBox="0 0 485.213 485.212"
-                                            style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                                        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 485.213 485.212" style="enable-background:new 0 0 20 20;" xml:space="preserve">
                                             <g>
                                                 <path d="M60.652,75.816V15.163C60.652,6.781,67.433,0,75.817,0c8.38,0,15.161,6.781,15.161,15.163v60.653
                                                 c0,8.38-6.781,15.161-15.161,15.161C67.433,90.978,60.652,84.196,60.652,75.816z M318.424,90.978
@@ -235,32 +256,28 @@
                         </ul>
                         <ul class="topBarMenu social" data-tracking-action="Clic réseaux sociaux">
                             <li>
-                                <a href="https://www.facebook.com/jean.louis.david.officiel" target="_blank"
-                                    class="iconContainer tracking-click" data-tracking-label="Facebook">
+                                <a href="https://www.facebook.com/jean.louis.david.officiel" target="_blank" class="iconContainer tracking-click" data-tracking-label="Facebook">
                                     <p class="fontAwesome">
                                         <span class="fa fa-facebook"></span>
                                     </p>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://instagram.com/jeanlouisdavidfr" target="_blank"
-                                    class="iconContainer tracking-click" data-tracking-label="Instagram">
+                                <a href="http://instagram.com/jeanlouisdavidfr" target="_blank" class="iconContainer tracking-click" data-tracking-label="Instagram">
                                     <p class="fontAwesome">
                                         <span class="fa fa-instagram"></span>
                                     </p>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://www.pinterest.com/jeanlouisdavid" target="_blank"
-                                    class="iconContainer tracking-click" data-tracking-label="Pinterest">
+                                <a href="http://www.pinterest.com/jeanlouisdavid" target="_blank" class="iconContainer tracking-click" data-tracking-label="Pinterest">
                                     <p class="fontAwesome">
                                         <span class="fa fa-pinterest-p"></span>
                                     </p>
                                 </a>
                             </li>
                             <li>
-                                <a href="http://www.youtube.com/user/JeanLouisDavidFR" target="_blank"
-                                    class="iconContainer tracking-click" data-tracking-label="YouTube">
+                                <a href="http://www.youtube.com/user/JeanLouisDavidFR" target="_blank" class="iconContainer tracking-click" data-tracking-label="YouTube">
                                     <p class="fontAwesome">
                                         <span class="fa fa-youtube-play"></span>
                                     </p>
@@ -270,10 +287,7 @@
                         <ul class="topBarMenu functionalTopBar">
                             <li>
                                 <div class="critizrStoreLocator mobileOnly">
-                                    <a class="critizr-widget"
-                                        href="https://preprod.critizr.com/widgets/provalliance-jean-louis-david/"
-                                        data-type="store_button:fact_national"
-                                        data-params='{"cta_text":"Je donne mon avis"}'>Trouver un salon</a>
+                                    <a class="critizr-widget" href="https://preprod.critizr.com/widgets/provalliance-jean-louis-david/" data-type="store_button:fact_national" data-params='{"cta_text":"Je donne mon avis"}'>Trouver un salon</a>
                                 </div>
 
                                 <div class="langSwitcher">
@@ -361,8 +375,7 @@
                                 </div>
                             </li>
                             <li>
-                                <a href="#" class="iconContainer newsletter-button tracking-click"
-                                    data-tracking-action="Clic newsletter">
+                                <a href="#" class="iconContainer newsletter-button tracking-click" data-tracking-action="Clic newsletter">
                                     <p class="fontAwesome">
                                         <span class="fa fa-envelope-o"></span>
                                     </p>
@@ -386,10 +399,7 @@
                             </li>
                             <li>
                                 <div class="critizrStoreLocator">
-                                    <a class="critizr-widget"
-                                        href="https://preprod.critizr.com/widgets/provalliance-jean-louis-david/"
-                                        data-type="store_button:fact_national"
-                                        data-params='{"cta_text":"Je donne mon avis"}'>Trouver un salon</a>
+                                    <a class="critizr-widget" href="https://preprod.critizr.com/widgets/provalliance-jean-louis-david/" data-type="store_button:fact_national" data-params='{"cta_text":"Je donne mon avis"}'>Trouver un salon</a>
                                 </div>
                             </li>
                         </ul>
@@ -407,58 +417,55 @@
 
                                         <div class="locateSign"></div>
                                     </div>
-                                    <p class="underLocate">et affichez les salons de coiffure Jean Louis David près de
-                                        chez vous</p>
+                                    <p class="underLocate">et affichez les salons de coiffure Jean Louis David près de chez vous</p>
 
                                     <p class="underLocate"></p>
 
                                     <p>ou</p>
 
                                     <form class="salonSearchForm">
-                                        <input placeholder="Saisissez votre adresse ou le nom du salon" name="q"
-                                            autocomplete="off">
+                                        <input placeholder="Saisissez votre adresse ou le nom du salon" name="q" autocomplete="off">
                                         <div class="salonSearchForm__checkbox">
                                             <input type="checkbox" name="bar_a_styles" value="1">
                                             <span class="salonSearchForm__checkbox--title">Rechercher uniquement les
                                                 salons avec un Bar à Styles</span>
                                             <span class="salonSearchForm__info salonSearchForm__info--header"></span>
                                             <div class="salonSearchForm__popup salonSearchForm__popup--header">
-                                                <p>Trouvez tous les salons pour réaliser un SPEED BRUSH, un SPEED CURL
-                                                    ou un SPEED UP-DO</p>
+                                                <p>Trouvez tous les salons pour réaliser un SPEED BRUSH, un SPEED CURL ou un SPEED UP-DO</p>
                                             </div>
                                         </div>
 
                                         <script>
-                                            (function () {
+                                            (function() {
                                                 var infoIcon = document.querySelectorAll('.salonSearchForm__info--header');
                                                 var popup = document.querySelectorAll('.salonSearchForm__popup--header');
                                                 var changeSalon = document.querySelector('.locator__on__list .changeSalon');
                                                 var windowWidth = window.innerWidth;
 
                                                 if (changeSalon) {
-                                                    changeSalon.addEventListener('click', function () {
+                                                    changeSalon.addEventListener('click', function() {
                                                         document.querySelector('.locator-toggle').classList.remove('active');
                                                         document.querySelector('.salon-search-toggle').classList.add('active');
                                                     });
                                                 }
 
                                                 if (windowWidth > 768) {
-                                                    infoIcon.forEach(function (item) {
-                                                        item.addEventListener('mouseover', function () {
-                                                            popup.forEach(function (itemP) {
+                                                    infoIcon.forEach(function(item) {
+                                                        item.addEventListener('mouseover', function() {
+                                                            popup.forEach(function(itemP) {
                                                                 itemP.style.opacity = 1;
                                                             })
                                                         })
-                                                        item.addEventListener('mouseout', function () {
-                                                            popup.forEach(function (itemP) {
+                                                        item.addEventListener('mouseout', function() {
+                                                            popup.forEach(function(itemP) {
                                                                 itemP.style.opacity = 0;
                                                             })
                                                         })
                                                     })
                                                 } else {
-                                                    infoIcon.forEach(function (item) {
-                                                        item.addEventListener('click', function () {
-                                                            popup.forEach(function (itemP) {
+                                                    infoIcon.forEach(function(item) {
+                                                        item.addEventListener('click', function() {
+                                                            popup.forEach(function(itemP) {
                                                                 if (itemP.style.opacity == 1) {
                                                                     itemP.style.opacity = 0;
                                                                 } else {
@@ -470,7 +477,6 @@
                                                     });
                                                 }
                                             }());
-
                                         </script> <button type="submit">
                                             <p>Recherchez</p>
                                         </button>
@@ -528,7 +534,121 @@
 
                         <script>
                             WB.utils.overlayDisplay();
-                            WB.utils.initGeolocation('https://maps.googleapis.com/maps/api/js?language=fr&key=AIzaSyAgH5pMUaNoUr2CuK_w0XAtDg9VOZm9KJg', { "routes": { "fr": { "LABEL_JS_ROUTE_SALON": "salon-coiffure", "LABEL_JS_ROUTE_SALON_PAGE": "coiffeur" }, "es_ES": { "LABEL_JS_ROUTE_SALON": "salon-peluqueria", "LABEL_JS_ROUTE_SALON_PAGE": "peluqueria" }, "es": { "LABEL_JS_ROUTE_SALON": "salon-peluqueria", "LABEL_JS_ROUTE_SALON_PAGE": "peluqueria" }, "en_GB": { "LABEL_JS_ROUTE_SALON": "hair-salon", "LABEL_JS_ROUTE_SALON_PAGE": "hairdresser" }, "en": { "LABEL_JS_ROUTE_SALON": "hair-salon", "LABEL_JS_ROUTE_SALON_PAGE": "hairdresser" }, "us": { "LABEL_JS_ROUTE_SALON": "hair-salon", "LABEL_JS_ROUTE_SALON_PAGE": "hairdresser" }, "it_IT": { "LABEL_JS_ROUTE_SALON": "parrucchiere", "LABEL_JS_ROUTE_SALON_PAGE": "parrucchiere" }, "it": { "LABEL_JS_ROUTE_SALON": "parrucchiere", "LABEL_JS_ROUTE_SALON_PAGE": "parrucchiere" }, "pl": { "LABEL_JS_ROUTE_SALON": "salon-fryzjerski", "LABEL_JS_ROUTE_SALON_PAGE": "fryzjer" }, "pt": { "LABEL_JS_ROUTE_SALON": "salao-cabeleireiro", "LABEL_JS_ROUTE_SALON_PAGE": "cabeleireiro" }, "ru": { "LABEL_JS_ROUTE_SALON": "\u043f\u0430\u0440\u0438\u043a\u043c\u0430\u0445\u0435\u0440\u0441\u043a\u0430\u044f", "LABEL_JS_ROUTE_SALON_PAGE": "\u043f\u0430\u0440\u0438\u043a\u043c\u0430\u0445\u0435\u0440" } }, "site_config": { "site_group_id": "71", "show": { "mobileinterstitial": "" }, "analytics_id": "UA-32861718-1", "video": { "width": "450,300", "height": "0,0" }, "en_US": { "url": "https:\/\/www.jeanlouisdavid.us" }, "en": { "url": "https:\/\/www.jeanlouisdavid.us" }, "us": { "url": "https:\/\/www.jeanlouisdavid.us" }, "es_ES": { "url": "https:\/\/www.jeanlouisdavid.com.es" }, "es": { "url": "https:\/\/www.jeanlouisdavid.com.es" }, "fr": { "url": "https:\/\/www.jeanlouisdavid.com" }, "it_IT": { "url": "https:\/\/www.jeanlouisdavid.it" }, "it": { "url": "https:\/\/www.jeanlouisdavid.it" }, "pl": { "url": "https:\/\/www.jeanlouisdavid.pl" }, "pt": { "url": "https:\/\/www.jeanlouisdavid.pt" }, "ru": { "url": "https:\/\/www.jeanlouisdavid.ru" }, "ko": { "url": "http:\/\/www.jldkorea.com\/shop\/main\/index.php" }, "es_MX": { "url": "http:\/\/www.jeanlouisdavid.com.mx" }, "ua": { "url": "http:\/\/jld.com.ua\/" }, "comments": "facebook", "site_id": "127", "language_id": "1", "language": "fr", "timezone": "Europe\/Paris", "basename": "jeanlouisdavid.com", "base_country_id": "1", "base_country_code": "FR", "api_locale_code": "FR", "site_url": "https:\/\/www.jeanlouisdavid.com", "static_path": "\/var\/shared5\/www\/jeanlouisdavid\/images_fr\/", "static_path_temp": "\/var\/shared5\/www\/jeanlouisdavid\/images_fr\/temp\/", "static_url": "https:\/\/static1.jeanlouisdavid.com", "static_url_temp": "https:\/\/static1.jeanlouisdavid.com\/temp\/" } }, '<div class="salonItem" data-id="[ID]"><div class="image"><img src="[IMG]"></div><div class="textBlock">[TITLE]<p class="jld"><span>[BRAND]</span></p><p class="address">[ADDRESS]</p><a href="tel:[CONVERTED_PHONE]" class="tel tracking-click" data-tracking-action="appel salon" data-tracking-category="box locator" data-tracking-label="[ADDRESS]">Tél.  [PHONE]</a></div><div class="selectSalon buttonGold"><p>[ACTION_TITLE]</p></div></div>', '<div class="salonItem" data-id="[ID]"><div class="image-bg" style="background-image: url([IMG]);"></div><div class="textBlock">[TITLE]<p class="jld"><span>[BRAND]</span></p><p class="address">[ADDRESS]</p><a href="tel:[CONVERTED_PHONE]" class="tel tracking-click" data-tracking-action="appel salon" data-tracking-category="box locator" data-tracking-label="[ADDRESS]">Tél.  [PHONE]</a></div><div class="selectSalon buttonGold"><p>[ACTION_TITLE]</p></div></div>', "<p><span class='brandName'>[BRAND]</span></p><p>[ADDRESS]</p><p><a href='tel:[CONVERTED_PHONE]' class='tel tracking-click' data-tracking-action='appel salon' data-tracking-category='box locator' data-tracking-label='[ADDRESS]'>Tél.  [PHONE]</a></p><p>Ouvert aujourd'hui de [FROM] à [TO]</p>", 'AIzaSyAgH5pMUaNoUr2CuK_w0XAtDg9VOZm9KJg');
+                            WB.utils.initGeolocation('https://maps.googleapis.com/maps/api/js?language=fr&key=AIzaSyAgH5pMUaNoUr2CuK_w0XAtDg9VOZm9KJg', {
+                                "routes": {
+                                    "fr": {
+                                        "LABEL_JS_ROUTE_SALON": "salon-coiffure",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "coiffeur"
+                                    },
+                                    "es_ES": {
+                                        "LABEL_JS_ROUTE_SALON": "salon-peluqueria",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "peluqueria"
+                                    },
+                                    "es": {
+                                        "LABEL_JS_ROUTE_SALON": "salon-peluqueria",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "peluqueria"
+                                    },
+                                    "en_GB": {
+                                        "LABEL_JS_ROUTE_SALON": "hair-salon",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "hairdresser"
+                                    },
+                                    "en": {
+                                        "LABEL_JS_ROUTE_SALON": "hair-salon",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "hairdresser"
+                                    },
+                                    "us": {
+                                        "LABEL_JS_ROUTE_SALON": "hair-salon",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "hairdresser"
+                                    },
+                                    "it_IT": {
+                                        "LABEL_JS_ROUTE_SALON": "parrucchiere",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "parrucchiere"
+                                    },
+                                    "it": {
+                                        "LABEL_JS_ROUTE_SALON": "parrucchiere",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "parrucchiere"
+                                    },
+                                    "pl": {
+                                        "LABEL_JS_ROUTE_SALON": "salon-fryzjerski",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "fryzjer"
+                                    },
+                                    "pt": {
+                                        "LABEL_JS_ROUTE_SALON": "salao-cabeleireiro",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "cabeleireiro"
+                                    },
+                                    "ru": {
+                                        "LABEL_JS_ROUTE_SALON": "\u043f\u0430\u0440\u0438\u043a\u043c\u0430\u0445\u0435\u0440\u0441\u043a\u0430\u044f",
+                                        "LABEL_JS_ROUTE_SALON_PAGE": "\u043f\u0430\u0440\u0438\u043a\u043c\u0430\u0445\u0435\u0440"
+                                    }
+                                },
+                                "site_config": {
+                                    "site_group_id": "71",
+                                    "show": {
+                                        "mobileinterstitial": ""
+                                    },
+                                    "analytics_id": "UA-32861718-1",
+                                    "video": {
+                                        "width": "450,300",
+                                        "height": "0,0"
+                                    },
+                                    "en_US": {
+                                        "url": "https:\/\/www.jeanlouisdavid.us"
+                                    },
+                                    "en": {
+                                        "url": "https:\/\/www.jeanlouisdavid.us"
+                                    },
+                                    "us": {
+                                        "url": "https:\/\/www.jeanlouisdavid.us"
+                                    },
+                                    "es_ES": {
+                                        "url": "https:\/\/www.jeanlouisdavid.com.es"
+                                    },
+                                    "es": {
+                                        "url": "https:\/\/www.jeanlouisdavid.com.es"
+                                    },
+                                    "fr": {
+                                        "url": "https:\/\/www.jeanlouisdavid.com"
+                                    },
+                                    "it_IT": {
+                                        "url": "https:\/\/www.jeanlouisdavid.it"
+                                    },
+                                    "it": {
+                                        "url": "https:\/\/www.jeanlouisdavid.it"
+                                    },
+                                    "pl": {
+                                        "url": "https:\/\/www.jeanlouisdavid.pl"
+                                    },
+                                    "pt": {
+                                        "url": "https:\/\/www.jeanlouisdavid.pt"
+                                    },
+                                    "ru": {
+                                        "url": "https:\/\/www.jeanlouisdavid.ru"
+                                    },
+                                    "ko": {
+                                        "url": "http:\/\/www.jldkorea.com\/shop\/main\/index.php"
+                                    },
+                                    "es_MX": {
+                                        "url": "http:\/\/www.jeanlouisdavid.com.mx"
+                                    },
+                                    "ua": {
+                                        "url": "http:\/\/jld.com.ua\/"
+                                    },
+                                    "comments": "facebook",
+                                    "site_id": "127",
+                                    "language_id": "1",
+                                    "language": "fr",
+                                    "timezone": "Europe\/Paris",
+                                    "basename": "jeanlouisdavid.com",
+                                    "base_country_id": "1",
+                                    "base_country_code": "FR",
+                                    "api_locale_code": "FR",
+                                    "site_url": "https:\/\/www.jeanlouisdavid.com",
+                                    "static_path": "\/var\/shared5\/www\/jeanlouisdavid\/images_fr\/",
+                                    "static_path_temp": "\/var\/shared5\/www\/jeanlouisdavid\/images_fr\/temp\/",
+                                    "static_url": "https:\/\/static1.jeanlouisdavid.com",
+                                    "static_url_temp": "https:\/\/static1.jeanlouisdavid.com\/temp\/"
+                                }
+                            }, '<div class="salonItem" data-id="[ID]"><div class="image"><img src="[IMG]"></div><div class="textBlock">[TITLE]<p class="jld"><span>[BRAND]</span></p><p class="address">[ADDRESS]</p><a href="tel:[CONVERTED_PHONE]" class="tel tracking-click" data-tracking-action="appel salon" data-tracking-category="box locator" data-tracking-label="[ADDRESS]">Tél.  [PHONE]</a></div><div class="selectSalon buttonGold"><p>[ACTION_TITLE]</p></div></div>', '<div class="salonItem" data-id="[ID]"><div class="image-bg" style="background-image: url([IMG]);"></div><div class="textBlock">[TITLE]<p class="jld"><span>[BRAND]</span></p><p class="address">[ADDRESS]</p><a href="tel:[CONVERTED_PHONE]" class="tel tracking-click" data-tracking-action="appel salon" data-tracking-category="box locator" data-tracking-label="[ADDRESS]">Tél.  [PHONE]</a></div><div class="selectSalon buttonGold"><p>[ACTION_TITLE]</p></div></div>', "<p><span class='brandName'>[BRAND]</span></p><p>[ADDRESS]</p><p><a href='tel:[CONVERTED_PHONE]' class='tel tracking-click' data-tracking-action='appel salon' data-tracking-category='box locator' data-tracking-label='[ADDRESS]'>Tél.  [PHONE]</a></p><p>Ouvert aujourd'hui de [FROM] à [TO]</p>", 'AIzaSyAgH5pMUaNoUr2CuK_w0XAtDg9VOZm9KJg');
                         </script>
                     </div>
                 </div>
@@ -559,38 +679,31 @@
                         </ul>
                         <ul class="subMenuStyleGolden">
                             <li class="nav-text">
-                                <i class="fa icon-arrow"></i> 
-                                <a href="/marque" class="navItem tracking-click"
-                                    data-tracking-label="mtavari">მთავარი</a>
+                                <i class="fa icon-arrow"></i>
+                                <a href="/marque" class="navItem tracking-click" data-tracking-label="mtavari">მთავარი</a>
 
 
                             </li>
                             <li class="nav-text">
-                                <i class="fa icon-arrow"></i> <a href="/collections" class="navItem tracking-click"
-                                    data-tracking-label="blog">ბლოგი</a>
+                                <i class="fa icon-arrow"></i> <a href="/collections" class="navItem tracking-click" data-tracking-label="blog">ბლოგი</a>
                             </li>
                             <li class="nav-text">
-                                <i class="fa icon-arrow"></i> <a href="/services" class="navItem tracking-click"
-                                    data-tracking-label="services">სერვისები</a>
-                            </li>
-                            <li class="nav-text"> 
-                                <i class="fa icon-arrow"></i> <a href="/produits" class="navItem tracking-click"
-                                    data-tracking-label="team">გუნდი</a>
-                            </li>                                  
-                            <li class="nav-text">
-                                <i class="fa icon-arrow"></i> <a href="/tag/coiffure_t1/1"
-                                    class="navItem tracking-click" data-tracking-label="Gallery">გალერეა</a>
+                                <i class="fa icon-arrow"></i> <a href="/services" class="navItem tracking-click" data-tracking-label="services">სერვისები</a>
                             </li>
                             <li class="nav-text">
-                                <i class="fa icon-arrow"></i> <a href="/tag/coloration_t23/1"
-                                    class="navItem tracking-click" data-tracking-label="about us">ჩვენს შესახებ</a>
+                                <i class="fa icon-arrow"></i> <a href="/produits" class="navItem tracking-click" data-tracking-label="team">გუნდი</a>
                             </li>
                             <li class="nav-text">
-                                <i class="fa icon-arrow"></i> <a href="/tag/soins_t30/1" class="navItem tracking-click"
-                                    data-tracking-label="Contact">კონტაქტი</a>
+                                <i class="fa icon-arrow"></i> <a href="/tag/coiffure_t1/1" class="navItem tracking-click" data-tracking-label="Gallery">გალერეა</a>
                             </li>
-                         </ul>  
-                        
+                            <li class="nav-text">
+                                <i class="fa icon-arrow"></i> <a href="/tag/coloration_t23/1" class="navItem tracking-click" data-tracking-label="about us">ჩვენს შესახებ</a>
+                            </li>
+                            <li class="nav-text">
+                                <i class="fa icon-arrow"></i> <a href="/tag/soins_t30/1" class="navItem tracking-click" data-tracking-label="Contact">კონტაქტი</a>
+                            </li>
+                        </ul>
+
                     </nav>
                     <ul class="iconBar stickyOnly">
                         <li>
@@ -600,36 +713,28 @@
                                         <div class="shareSubmenu">
                                             <ul class="topBarMenu social" data-tracking-action="Clic réseaux sociaux">
                                                 <li>
-                                                    <a href="https://www.facebook.com/jean.louis.david.officiel"
-                                                        target="_blank" class="iconContainer tracking-click"
-                                                        data-tracking-label="Facebook">
+                                                    <a href="https://www.facebook.com/jean.louis.david.officiel" target="_blank" class="iconContainer tracking-click" data-tracking-label="Facebook">
                                                         <p class="fontAwesome">
                                                             <span class="fa fa-facebook"></span>
                                                         </p>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="http://instagram.com/jeanlouisdavidfr" target="_blank"
-                                                        class="iconContainer tracking-click"
-                                                        data-tracking-label="Instagram">
+                                                    <a href="http://instagram.com/jeanlouisdavidfr" target="_blank" class="iconContainer tracking-click" data-tracking-label="Instagram">
                                                         <p class="fontAwesome">
                                                             <span class="fa fa-instagram"></span>
                                                         </p>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="http://www.pinterest.com/jeanlouisdavid" target="_blank"
-                                                        class="iconContainer tracking-click"
-                                                        data-tracking-label="Pinterest">
+                                                    <a href="http://www.pinterest.com/jeanlouisdavid" target="_blank" class="iconContainer tracking-click" data-tracking-label="Pinterest">
                                                         <p class="fontAwesome">
                                                             <span class="fa fa-pinterest-p"></span>
                                                         </p>
                                                     </a>
                                                 </li>
                                                 <li>
-                                                    <a href="http://www.youtube.com/user/JeanLouisDavidFR"
-                                                        target="_blank" class="iconContainer tracking-click"
-                                                        data-tracking-label="YouTube">
+                                                    <a href="http://www.youtube.com/user/JeanLouisDavidFR" target="_blank" class="iconContainer tracking-click" data-tracking-label="YouTube">
                                                         <p class="fontAwesome">
                                                             <span class="fa fa-youtube-play"></span>
                                                         </p>
@@ -642,8 +747,7 @@
                             </div>
                         </li>
                         <li>
-                            <a href="#" class="iconContainer newsletter-button tracking-click"
-                                data-tracking-action="Clic newsletter">
+                            <a href="#" class="iconContainer newsletter-button tracking-click" data-tracking-action="Clic newsletter">
                                 <p class="fontAwesome">
                                     <span class="fa fa-envelope-o"></span>
                                 </p>
@@ -657,9 +761,7 @@
                             </a>
                         </li>
                         <li>
-                            <a data-tracking-category="Trouvez votre salon" data-tracking-action="module header"
-                                data-tracking-label="icone geolocalisation" class="iconContainer tracking-click"
-                                href="/salon-coiffure/trouvez-votre-salon">
+                            <a data-tracking-category="Trouvez votre salon" data-tracking-action="module header" data-tracking-label="icone geolocalisation" class="iconContainer tracking-click" href="/salon-coiffure/trouvez-votre-salon">
                                 <div class="icon">
                                     <div class="iconPin"></div>
                                 </div>
@@ -669,9 +771,8 @@
                 </div>
             </div>
             <div id="pageContent">
-                
-                <div id="mobileMenuBlock" class="wide78" data-tracking-category="Header"
-                    data-tracking-action="Clic rubriques">
+
+                <div id="mobileMenuBlock" class="wide78" data-tracking-category="Header" data-tracking-action="Clic rubriques">
                     <div class="mainPadding">
                         <div id="mobileMenuBlock__button">
                             <a class="locationButton"></a>
@@ -683,7 +784,7 @@
                         </a>
                     </div>
                 </div>
-              
+
 
                 <script>
                     var infoIcon = document.querySelectorAll('.salonSearchForm__info');
@@ -692,29 +793,29 @@
                     var windowWidth = window.innerWidth;
 
                     if (changeSalon) {
-                        changeSalon.addEventListener('click', function () {
+                        changeSalon.addEventListener('click', function() {
                             document.querySelector('.locator-toggle').classList.remove('active');
                             document.querySelector('.salon-search-toggle').classList.add('active');
                         });
                     }
 
                     if (windowWidth > 768) {
-                        infoIcon.forEach(function (item) {
-                            item.addEventListener('mouseover', function () {
-                                popup.forEach(function (itemP) {
+                        infoIcon.forEach(function(item) {
+                            item.addEventListener('mouseover', function() {
+                                popup.forEach(function(itemP) {
                                     itemP.style.opacity = 1;
                                 })
                             })
-                            item.addEventListener('mouseout', function () {
-                                popup.forEach(function (itemP) {
+                            item.addEventListener('mouseout', function() {
+                                popup.forEach(function(itemP) {
                                     itemP.style.opacity = 0;
                                 })
                             })
                         })
                     } else {
-                        infoIcon.forEach(function (item) {
-                            item.addEventListener('click', function () {
-                                popup.forEach(function (itemP) {
+                        infoIcon.forEach(function(item) {
+                            item.addEventListener('click', function() {
+                                popup.forEach(function(itemP) {
                                     if (itemP.style.opacity == 1) {
                                         itemP.style.opacity = 0;
                                     } else {
@@ -730,8 +831,7 @@
                     <div class="carusel">
                         <div class="positionRel">
                             <div class="positionRel hpSlider">
-                                <span
-                                    class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B41E4F49C44AC0C143494BC143C24F46494B43C44FC3C23F4A2C2B2B2C1321B42A hpSlide positionRel">
+                                <span class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B41E4F49C44AC0C143494BC143C24F46494B43C44FC3C23F4A2C2B2B2C1321B42A hpSlide positionRel">
                                     <picture>
                                         <source media="(max-width: 640px)"
                                             srcset="https://static1.jeanlouisdavid.com/teasers/5/14/05/@/21149609-0-21149609-2020-04-site-reouverture-home-jld-1280x450-bis-375x225-1.jpg">
@@ -745,12 +845,11 @@
                                             <span>Conformément aux recommandations sanitaires en vigueur, nos salons de
                                                 coiffure mettent tout en œuvre pour vous recevoir dans des conditions
                                                 sanitaires parfaitement sûres.</span>
-                                        </div>
-                                        <div class="counter"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                </span> <span
-                                    class="hrl 45CBCBC0C21322BA1321B41321B4C143C243C1C44ACB464F49C2194D434A49484FC346C24B4AC4464B19424F4E1321B4C143C243C1C44ACB464F491321B44AC1434A hpSlide positionRel">
+                            </div>
+                            <div class="counter"></div>
+                            <div class="line"></div>
+                        </div>
+                        </span> <span class="hrl 45CBCBC0C21322BA1321B41321B4C143C243C1C44ACB464F49C2194D434A49484FC346C24B4AC4464B19424F4E1321B4C143C243C1C44ACB464F491321B44AC1434A hpSlide positionRel">
                                     <picture>
                                         <source media="(max-width: 640px)"
                                             srcset="https://static1.jeanlouisdavid.com/teasers/8/14/08/@/21160124-0-21160124-2020-04-site-reouverture-home-jld-1280x450-375x225-1.jpg">
@@ -763,12 +862,11 @@
                                             Prenez rendez-vous !
                                             <span>Nous vous invitons à prendre rendez-vous en ligne pour organiser au
                                                 mieux votre visite.</span>
-                                        </div>
-                                        <div class="counter"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                </span> <span
-                                    class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B44FC043C14ACB464F491E4D43C2C346C2424F46444443C3C1C24F48464B4A46C1433F4A2C2B2B2A1321B42A hpSlide positionRel">
+                    </div>
+                    <div class="counter"></div>
+                    <div class="line"></div>
+                </div>
+                </span> <span class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B44FC043C14ACB464F491E4D43C2C346C2424F46444443C3C1C24F48464B4A46C1433F4A2C2B2B2A1321B42A hpSlide positionRel">
                                     <picture>
                                         <source media="(max-width: 640px)"
                                             srcset="https://static1.jeanlouisdavid.com/teasers/9/13/99/@/20858123-0-20858123-new-version2-375x225-1.jpg">
@@ -781,12 +879,11 @@
                                             Opération #JeSuisCoiffeurSolidaire
                                             <span>Jean Louis David soutient l’opération #JeSuisCoiffeurSolidaire lancée
                                                 par Monsieur Franck Provost</span>
-                                        </div>
-                                        <div class="counter"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                </span> <span
-                                    class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B4C24A484F491E424F464444C3C1431321B4CBC14FC3C443CD1EC44FCBC1431EC24A484F49 hpSlide positionRel">
+            </div>
+            <div class="counter"></div>
+            <div class="line"></div>
+        </div>
+        </span> <span class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B4C24A484F491E424F464444C3C1431321B4CBC14FC3C443CD1EC44FCBC1431EC24A484F49 hpSlide positionRel">
                                     <picture>
                                         <source media="(max-width: 640px)"
                                             srcset="https://static1.jeanlouisdavid.com/teasers/5/13/85/@/20868965-0-20868965-jld-ss2020-04-375x225-1.jpg">
@@ -799,12 +896,11 @@
                                             Découvrez le Magic Light
                                             <span>Les reflets de votre choix et une maxi brillance sans effet racine
                                                 !</span>
-                                        </div>
-                                        <div class="counter"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                </span> <span
-                                    class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B44843C21E484F4F47C21E4B431E484A1E424F48484342CB464F491E42C14ACDC61E4A414FC3CB1E4D484B3F4A2C2B22231321B42A hpSlide positionRel">
+    </div>
+    <div class="counter"></div>
+    <div class="line"></div>
+    </div>
+    </span> <span class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B44843C21E484F4F47C21E4B431E484A1E424F48484342CB464F491E42C14ACDC61E4A414FC3CB1E4D484B3F4A2C2B22231321B42A hpSlide positionRel">
                                     <picture>
                                         <source media="(max-width: 640px)"
                                             srcset="https://static1.jeanlouisdavid.com/teasers/2/75/2/@/20867489-0-20867489-2020-03-jld-website-maj-home-looks-header-1280x450-375x225-1.jpg">
@@ -816,12 +912,11 @@
                                         <div class="title">
                                             At The Top
                                             <span>Les périodes emblématiques sur toutes les têtes !</span>
-                                        </div>
-                                        <div class="counter"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                </span> <span
-                                    class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B4484A1E44C14A494C431E484F494CC3431E4A1E481E454F494943C3C11EC04FC3C11E48431EC0C14649CB434EC0C21E43CB431E212021203F4A2C2B21201321B42A hpSlide positionRel">
+    </div>
+    <div class="counter"></div>
+    <div class="line"></div>
+    </div>
+    </span> <span class="hrl 45CBCBC0C21322BA1321B41321B4CCCCCC194D434A49484FC346C24B4AC4464B19424F4E1321B44AC1CB464248431321B4484A1E44C14A494C431E484F494CC3431E4A1E481E454F494943C3C11EC04FC3C11E48431EC0C14649CB434EC0C21E43CB431E212021203F4A2C2B21201321B42A hpSlide positionRel">
                                     <picture>
                                         <source media="(max-width: 640px)"
                                             srcset="https://static1.jeanlouisdavid.com/teasers/6/92/6/@/20868398-0-20868398-2020-03-jld-website-maj-collection-header-1280x660-375x225-1.jpg">
@@ -833,12 +928,11 @@
                                         <div class="title">
                                             Collection Printemps Eté 2020
                                             <span>La frange longue, star de la saison Printemps Eté 2020 !</span>
-                                        </div>
-                                        <div class="counter"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                </span> <span
-                                    class="hrl 45CBCBC0C21322BA1321B41321B4C143C243C1C44ACB464F49C2194D434A49484FC346C24B4AC4464B19424F4E1321B4C143C243C1C44ACB464F491321B44AC1434A hpSlide positionRel">
+    </div>
+    <div class="counter"></div>
+    <div class="line"></div>
+    </div>
+    </span> <span class="hrl 45CBCBC0C21322BA1321B41321B4C143C243C1C44ACB464F49C2194D434A49484FC346C24B4AC4464B19424F4E1321B4C143C243C1C44ACB464F491321B44AC1434A hpSlide positionRel">
                                     <picture>
                                         <source media="(max-width: 640px)"
                                             srcset="https://static1.jeanlouisdavid.com/teasers/1/88/1/@/20919332-0-20919332-jld-hp-locator-v2-375x225-1.jpg">
@@ -850,44 +944,42 @@
                                         <div class="title">
                                             #GagnezDuTemps
                                             <span>Prenez rendez-vous directement en ligne !</span>
-                                        </div>
-                                        <div class="counter"></div>
-                                        <div class="line"></div>
-                                    </div>
-                                </span> </div>
-                            <div class="blockPointsMobile blockPointHeight">
-                                <div class="pointLeft pointLeft--hp"></div>
-                                <div class="pointRight pointRight--hp"></div>
-                            </div>
-                        </div>
-                        <div class="blockInfo blockInfoViewer">
-                            <div class="blockPoints ">
-                                <div class="pointLeft pointLeft--hp"></div>
-                                <div class="pointRight pointRight--hp"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hpNewsBlock wide78 paddingBottom2">
-                    <div id="newsBlockMain">
-                        <div class="">
-                            <div class="mainPadding">
-                                <h2 class="h1 hpGridHeader">à la une</h2>
+    </div>
+    <div class="counter"></div>
+    <div class="line"></div>
+    </div>
+    </span>
+    </div>
+    <div class="blockPointsMobile blockPointHeight">
+        <div class="pointLeft pointLeft--hp"></div>
+        <div class="pointRight pointRight--hp"></div>
+    </div>
+    </div>
+    <div class="blockInfo blockInfoViewer">
+        <div class="blockPoints ">
+            <div class="pointLeft pointLeft--hp"></div>
+            <div class="pointRight pointRight--hp"></div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="hpNewsBlock wide78 paddingBottom2">
+        <div id="newsBlockMain">
+            <div class="">
+                <div class="mainPadding">
+                    <h2 class="h1 hpGridHeader">à la une</h2>
 
-                                <div class="hpLatest grids hpGrid clearfix">
+                    <div class="hpLatest grids hpGrid clearfix">
 
-                                    <div class="articleBlock1 hpArticleBlock" data-index="0"
-                                        data-tracking-label="Comment protéger mes cheveux du soleil tout en restant stylée cet été ?">
+                        <div class="articleBlock1 hpArticleBlock" data-index="0" data-tracking-label="Comment protéger mes cheveux du soleil tout en restant stylée cet été ?">
 
-                                        <div class="infoBlock">
-                                            <div class="typeInfo">Soins solaires</div>
-                                            <a href="/article/comment-proteger-mes-cheveux-du-soleil-tout-en-restant-stylee-cet-ete_a7450/1"
-                                                class="title">Comment protéger mes cheveux du soleil tout en
+                            <div class="infoBlock">
+                                <div class="typeInfo">Soins solaires</div>
+                                <a href="/article/comment-proteger-mes-cheveux-du-soleil-tout-en-restant-stylee-cet-ete_a7450/1" class="title">Comment protéger mes cheveux du soleil tout en
                                                 restant...</a>
-                                        </div>
+                            </div>
 
-                                        <span
-                                            class="hrl 1321B44AC1CB464248431321B4424F4E4E4349CB1EC0C14FCB434C43C11E4E43C21E424543C443C3C51E4BC31EC24F484346481ECB4FC3CB1E43491EC143C2CB4A49CB1EC2CBC64843431E4243CB1E43CB433F4A2C2B23201321B42A">
+                            <span class="hrl 1321B44AC1CB464248431321B4424F4E4E4349CB1EC0C14FCB434C43C11E4E43C21E424543C443C3C51E4BC31EC24F484346481ECB4FC3CB1E43491EC143C2CB4A49CB1EC2CBC64843431E4243CB1E43CB433F4A2C2B23201321B42A">
                                             <picture>
                                                 <source media="(max-width: 640px)"
                                                     srcset="https://static1.jeanlouisdavid.com/articles/0/74/50/@/14668-une-chevelure-stylee-et-protegee-c-est-342x240-1.jpg">
@@ -897,23 +989,18 @@
                                                     alt="Comment protéger mes cheveux du soleil tout en restant stylée cet été ?">
                                             </picture>
                                         </span>
-                                        <p>L'été est la saison que vos cheveux redoutent le plus. Pourtant,
-                                            rassurez-vous : rester stylée tout en protégeant vos cheveux sur la plage,
-                                            c'est possible !
-                                            Adaptez votre routine capillaire...</p>
-                                    </div>
+                            <p>L'été est la saison que vos cheveux redoutent le plus. Pourtant, rassurez-vous : rester stylée tout en protégeant vos cheveux sur la plage, c'est possible ! Adaptez votre routine capillaire...</p>
+                        </div>
 
-                                    <div class="articleBlock1 hpArticleBlock" data-index="1"
-                                        data-tracking-label="Charte Sécurité, Hygiène &amp; Santé">
+                        <div class="articleBlock1 hpArticleBlock" data-index="1" data-tracking-label="Charte Sécurité, Hygiène &amp; Santé">
 
-                                        <div class="infoBlock">
-                                            <div class="typeInfo">Actualités</div>
-                                            <a href="/article/-onvaprendresoindevous_a7447/1" class="title">Charte
+                            <div class="infoBlock">
+                                <div class="typeInfo">Actualités</div>
+                                <a href="/article/-onvaprendresoindevous_a7447/1" class="title">Charte
                                                 Sécurité, Hygiène & Santé</a>
-                                        </div>
+                            </div>
 
-                                        <span
-                                            class="hrl 1321B44AC1CB464248431321B41E4F49C44AC0C143494BC143C24F46494B43C44FC3C23F4A2C2B2B2C1321B42A">
+                            <span class="hrl 1321B44AC1CB464248431321B41E4F49C44AC0C143494BC143C24F46494B43C44FC3C23F4A2C2B2B2C1321B42A">
                                             <picture>
                                                 <source media="(max-width: 640px)"
                                                     srcset="https://static1.jeanlouisdavid.com/articles/7/74/47/@/14665--onvaprendresoindevous-342x240-1.jpg">
@@ -922,18 +1009,13 @@
                                                 <img src="https://static1.jeanlouisdavid.com/articles/7/74/47/@/14665--onvaprendresoindevous-373x240-1.jpg"
                                                     alt="Charte Sécurité, Hygiène &amp; Santé"> </picture>
                                         </span>
-                                        <p>#ONVAPRENDRESOINDEVOUS
-                                            1. À VOTRE ARRIVÉE DANS LE SALON, utilisez le gel hydro-alcoolique à votre
-                                            disposition pour vous désinfecter les mains. RENOUVELEZ la désinfection
-                                            aussi souvent que souhaité...</p>
-                                    </div>
+                            <p>#ONVAPRENDRESOINDEVOUS 1. À VOTRE ARRIVÉE DANS LE SALON, utilisez le gel hydro-alcoolique à votre disposition pour vous désinfecter les mains. RENOUVELEZ la désinfection aussi souvent que souhaité...</p>
+                        </div>
 
-                                    <div class="articleBlock2 hpArticleBlock" data-index="2"
-                                        data-tracking-label="Vrai-faux sur le masque capillaire">
-                                        <div class="table">
-                                            <div class="tableCell">
-                                                <span
-                                                    class="hrl 1321B44AC1CB464248431321B4C4C14A461E444AC3C51EC2C3C11E48431E4E4AC2CAC3431E424AC04648484A46C1433F4A2C20201321B42A">
+                        <div class="articleBlock2 hpArticleBlock" data-index="2" data-tracking-label="Vrai-faux sur le masque capillaire">
+                            <div class="table">
+                                <div class="tableCell">
+                                    <span class="hrl 1321B44AC1CB464248431321B4C4C14A461E444AC3C51EC2C3C11E48431E4E4AC2CAC3431E424AC04648484A46C1433F4A2C20201321B42A">
                                                     <div class="borderBlock">
                                                         <picture>
                                                             <source media="(max-width: 640px)"
@@ -946,32 +1028,26 @@
                                                                 src="/web/skins/images/border_line.png"></div>
                                                     </div>
                                                 </span> </div>
-                                            <div class="infoBlock">
-                                                <div class="typeInfo">
-                                                    Soins
+                                <div class="infoBlock">
+                                    <div class="typeInfo">
+                                        Soins
 
-                                                </div>
-                                                <a href="/article/vrai-faux-sur-le-masque-capillaire_a700/1"
-                                                    class="title">Vrai-faux sur le masque capillaire</a>
-
-                                                <p>Pour utiliser votre masque capillaire à bon escient, voici un
-                                                    vrai-faux pour vous faire oublier toutes les idées reçues que vous
-                                                    avez sur ce précieux produit cosmétique.
-                                                    Le masque capillaire...</p>
-
-                                            </div>
-                                        </div>
                                     </div>
+                                    <a href="/article/vrai-faux-sur-le-masque-capillaire_a700/1" class="title">Vrai-faux sur le masque capillaire</a>
 
-                                    
-                                  
+                                    <p>Pour utiliser votre masque capillaire à bon escient, voici un vrai-faux pour vous faire oublier toutes les idées reçues que vous avez sur ce précieux produit cosmétique. Le masque capillaire...</p>
 
-                                    <div class="articleBlock2 hpArticleBlock" data-index="6"
-                                        data-tracking-label="Masque capillaire : combien de temps dois-je le laisser poser ?">
-                                        <div class="table">
-                                            <div class="tableCell">
-                                                <span
-                                                    class="hrl 1321B44AC1CB464248431321B44E4AC2CAC3431E424AC04648484A46C1431E424F4E414643491E4B431ECB434EC0C21E4B4F46C21E4D431E48431E484A46C2C243C11EC04FC243C13F4A2C2221211321B42A">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="articleBlock2 hpArticleBlock" data-index="6" data-tracking-label="Masque capillaire : combien de temps dois-je le laisser poser ?">
+                            <div class="table">
+                                <div class="tableCell">
+                                    <span class="hrl 1321B44AC1CB464248431321B44E4AC2CAC3431E424AC04648484A46C1431E424F4E414643491E4B431ECB434EC0C21E4B4F46C21E4D431E48431E484A46C2C243C11EC04FC243C13F4A2C2221211321B42A">
                                                     <div class="borderBlock">
                                                         <picture>
                                                             <source media="(max-width: 640px)"
@@ -985,35 +1061,32 @@
                                                                 src="/web/skins/images/border_line.png"></div>
                                                     </div>
                                                 </span> </div>
-                                            <div class="infoBlock">
-                                                <div class="typeInfo">
-                                                    Soins
+                                <div class="infoBlock">
+                                    <div class="typeInfo">
+                                        Soins
 
-                                                </div>
-                                                <a href="/article/masque-capillaire-combien-de-temps-dois-je-le-laisser-poser_a7322/1"
-                                                    class="title">Masque capillaire : combien de temps dois-je le
+                                    </div>
+                                    <a href="/article/masque-capillaire-combien-de-temps-dois-je-le-laisser-poser_a7322/1" class="title">Masque capillaire : combien de temps dois-je le
                                                     laisser poser ?</a>
 
-                                                <p>On vous vante les bienfaits du masque capillaire à longueur de
-                                                    journée. Pourtant, une zone d'ombre demeure : combien de temps
-                                                    faut-il le laisser poser ? Une nuit, une heure, une minute ? Jean
-                                                    Louis...</p>
-
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <p>On vous vante les bienfaits du masque capillaire à longueur de journée. Pourtant, une zone d'ombre demeure : combien de temps faut-il le laisser poser ? Une nuit, une heure, une minute ? Jean Louis...
+                                    </p>
 
                                 </div>
-                                <a href="/livenews/1" class="moreNews">Plus de news</a>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="sidebar">
-                        <div class="sidebarWrap">
-                            <div class="singleBanner">
-                                <div class="item special">
-                                    <span target="_self" class="hrl 1321B4CB4A4C1321B4454F4E4E433FCB2B2B1321B42A">
+                    </div>
+                    <a href="/livenews/1" class="moreNews">Plus de news</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="sidebarWrap">
+                <div class="singleBanner">
+                    <div class="item special">
+                        <span target="_self" class="hrl 1321B4CB4A4C1321B4454F4E4E433FCB2B2B1321B42A">
                                         <picture>
                                             <source media="(max-width: 640px)"
                                                 srcset="https://static1.jeanlouisdavid.com/teasers/3/17/3/@/20868941-0-20868941-2020-03-jld-website-maj-home-push-homme-455x370-343x303-1.jpg">
@@ -1030,118 +1103,105 @@
                                             class="hrl 1321B4CB4A4C1321B4454F4E4E433FCB2B2B1321B42A buttonGold">
                                             Découvrez les tendances Homme
                                         </span>
-                                    </span></div>
-                            </div>
-                            <div class="wrap tracking-click-parent hpArticles" data-tracking-category="Les plus lus"
-                                data-tracking-action="Clic articles">
-                                <h2>Les plus lus</h2>
+                        </span>
+                    </div>
+                </div>
+                <div class="wrap tracking-click-parent hpArticles" data-tracking-category="Les plus lus" data-tracking-action="Clic articles">
+                    <h2>Les plus lus</h2>
 
-                                <div class="articlePreviewBlock">
-                                    <div class="articlePreview"
-                                        data-tracking-label="Quelles différences entre des mèches et un balayage ?">
-                                        <span
-                                            class="hrl 1321B44AC1CB464248431321B4CAC343484843C21E4B46444443C143494243C21E4349CBC1431E4B43C21E4E43424543C21E43CB1EC3491E414A484AC64A4C433F4A2122262A1321B42A articleThumbnail">
+                    <div class="articlePreviewBlock">
+                        <div class="articlePreview" data-tracking-label="Quelles différences entre des mèches et un balayage ?">
+                            <span class="hrl 1321B44AC1CB464248431321B4CAC343484843C21E4B46444443C143494243C21E4349CBC1431E4B43C21E4E43424543C21E43CB1EC3491E414A484AC64A4C433F4A2122262A1321B42A articleThumbnail">
                                             <img src="https://static1.jeanlouisdavid.com/articles/1/23/91/@/3661-quelles-differences-entre-des-meches-article_preview-2.jpg"
                                                 alt="Quelles différences entre des mèches et un balayage ?">
                                             <div class="border"><img src="/web/skins/images/border_line.png"></div>
                                         </span>
-                                        <div class="articleDescription">
-                                            <p class="category">
-                                                Coloration
-                                            </p>
+                            <div class="articleDescription">
+                                <p class="category">
+                                    Coloration
+                                </p>
 
-                                            <p class="articleTitle">
-                                                <a
-                                                    href="/article/quelles-differences-entre-des-meches-et-un-balayage_a2391/1">
-                                                    <span>Quelles différences entre des mèches et un balayage ?</span>
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="articlePreview"
-                                        data-tracking-label="Boucler mes cheveux lisses de façon permanente, une bonne idée ?">
-                                        <span
-                                            class="hrl 1321B44AC1CB464248431321B4414FC3424843C11E4E43C21E424543C443C3C51E4846C2C243C21E4B431E444A424F491EC043C14E4A494349CB431EC349431E414F4949431E464B43433F4A212421231321B42A articleThumbnail">
+                                <p class="articleTitle">
+                                    <a href="/article/quelles-differences-entre-des-meches-et-un-balayage_a2391/1">
+                                        <span>Quelles différences entre des mèches et un balayage ?</span>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="articlePreview" data-tracking-label="Boucler mes cheveux lisses de façon permanente, une bonne idée ?">
+                            <span class="hrl 1321B44AC1CB464248431321B4414FC3424843C11E4E43C21E424543C443C3C51E4846C2C243C21E4B431E444A424F491EC043C14E4A494349CB431EC349431E414F4949431E464B43433F4A212421231321B42A articleThumbnail">
                                             <img src="https://static1.jeanlouisdavid.com/articles/5/26/25/@/4385-boucler-mes-cheveux-lisses-de-facon-article_preview-2.jpg"
                                                 alt="Boucler mes cheveux lisses de façon permanente, une bonne idée ?">
                                             <div class="border"><img src="/web/skins/images/border_line.png"></div>
                                         </span>
-                                        <div class="articleDescription">
-                                            <p class="category">
-                                                Coiffure
-                                            </p>
+                            <div class="articleDescription">
+                                <p class="category">
+                                    Coiffure
+                                </p>
 
-                                            <p class="articleTitle">
-                                                <a
-                                                    href="/article/boucler-mes-cheveux-lisses-de-facon-permanente-une-bonne-idee_a2625/1">
-                                                    <span>Boucler mes cheveux lisses de façon permanente, une
+                                <p class="articleTitle">
+                                    <a href="/article/boucler-mes-cheveux-lisses-de-facon-permanente-une-bonne-idee_a2625/1">
+                                        <span>Boucler mes cheveux lisses de façon permanente, une
                                                         bonne...</span>
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="articlePreview"
-                                        data-tracking-label="Cheveux fins : comment choisir ma coupe pour obtenir plus de volume ?">
-                                        <span
-                                            class="hrl 1321B44AC1CB464248431321B4424543C443C3C51E444649C21E424F4E4E4349CB1E42454F46C246C11E4E4A1E424FC3C0431EC04FC3C11E4F41CB434946C11EC048C3C21E4B431EC44F48C34E433F4A21222C2A1321B42A articleThumbnail">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="articlePreview" data-tracking-label="Cheveux fins : comment choisir ma coupe pour obtenir plus de volume ?">
+                            <span class="hrl 1321B44AC1CB464248431321B4424543C443C3C51E444649C21E424F4E4E4349CB1E42454F46C246C11E4E4A1E424FC3C0431EC04FC3C11E4F41CB434946C11EC048C3C21E4B431EC44F48C34E433F4A21222C2A1321B42A articleThumbnail">
                                             <img src="https://static1.jeanlouisdavid.com/articles/1/23/71/@/3631-cheveux-fins-comment-choisir-ma-coupe-article_preview-2.jpg"
                                                 alt="Cheveux fins : comment choisir ma coupe pour obtenir plus de volume ?">
                                             <div class="border"><img src="/web/skins/images/border_line.png"></div>
                                         </span>
-                                        <div class="articleDescription">
-                                            <p class="category">
-                                                Coiffure
-                                            </p>
+                            <div class="articleDescription">
+                                <p class="category">
+                                    Coiffure
+                                </p>
 
-                                            <p class="articleTitle">
-                                                <a
-                                                    href="/article/cheveux-fins-comment-choisir-ma-coupe-pour-obtenir-plus-de-volume_a2371/1">
-                                                    <span>Cheveux fins : comment choisir ma coupe pour obtenir
+                                <p class="articleTitle">
+                                    <a href="/article/cheveux-fins-comment-choisir-ma-coupe-pour-obtenir-plus-de-volume_a2371/1">
+                                        <span>Cheveux fins : comment choisir ma coupe pour obtenir
                                                         plus...</span>
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="articlePreview"
-                                        data-tracking-label="Coloration cheveux gris : faut-il oser la tendance ?">
-                                        <span
-                                            class="hrl 1321B44AC1CB464248431321B4424F484FC14ACB464F491E424543C443C3C51E4CC146C21E444AC3CB1E46481E4FC243C11E484A1ECB43494B4A4942433F4A222B2B2C1321B42A articleThumbnail">
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="articlePreview" data-tracking-label="Coloration cheveux gris : faut-il oser la tendance ?">
+                            <span class="hrl 1321B44AC1CB464248431321B4424F484FC14ACB464F491E424543C443C3C51E4CC146C21E444AC3CB1E46481E4FC243C11E484A1ECB43494B4A4942433F4A222B2B2C1321B42A articleThumbnail">
                                             <img src="https://static1.jeanlouisdavid.com/articles/7/34/47/@/6972-adoptee-sur-les-podiums-la-coloration-g-article_preview-1.jpg"
                                                 alt="Coloration cheveux gris : faut-il oser la tendance ?">
                                             <div class="border"><img src="/web/skins/images/border_line.png"></div>
                                         </span>
-                                        <div class="articleDescription">
-                                            <p class="category">
-                                                Coloration
-                                            </p>
+                            <div class="articleDescription">
+                                <p class="category">
+                                    Coloration
+                                </p>
 
-                                            <p class="articleTitle">
-                                                <a
-                                                    href="/article/coloration-cheveux-gris-faut-il-oser-la-tendance_a3447/1">
-                                                    <span>Coloration cheveux gris : faut-il oser la tendance ?</span>
-                                                </a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
+                                <p class="articleTitle">
+                                    <a href="/article/coloration-cheveux-gris-faut-il-oser-la-tendance_a3447/1">
+                                        <span>Coloration cheveux gris : faut-il oser la tendance ?</span>
+                                    </a>
+                                </p>
                             </div>
-                        </div>
-
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="wide80">
-                    <div id="adviceExperts">
-                        <div class="clearfix">
-                            <div class="wide78">
-                                <h2>Découvrez tous les conseils d’experts Jean-Louis David</h2>
-                            </div>
+        </div>
+    </div>
+    </div>
 
-                            <div class="adviceCarousel clearfix">
-                                <div class="advice ">
-                                    <span
-                                        class="hrl 1321B44AC1CB464248431321B4424F4E4E4349CB1EC1434A4846C243C11E4B43C21E414FC3424843C21E484A424543C21E43CB1E4843C21E444A46C1431ECB434946C13F4A24222C2C1321B42A">
+    <div class="wide80">
+        <div id="adviceExperts">
+            <div class="clearfix">
+                <div class="wide78">
+                    <h2>Découvrez tous les conseils d’experts Jean-Louis David</h2>
+                </div>
+
+                <div class="adviceCarousel clearfix">
+                    <div class="advice ">
+                        <span class="hrl 1321B44AC1CB464248431321B4424F4E4E4349CB1EC1434A4846C243C11E4B43C21E414FC3424843C21E484A424543C21E43CB1E4843C21E444A46C1431ECB434946C13F4A24222C2C1321B42A">
                                         <div class="carousel-block">
                                             <div class="blockGradient">
                                                 <picture>
@@ -1160,15 +1220,15 @@
                                                 <a href="/article/comment-realiser-des-boucles-laches-et-les-faire-tenir_a6377/1"
                                                     class="title"><span>Comment réaliser des boucles lâches et les faire
                                                         tenir ?</span></a>
-                                                <p>Par notre expert Vanessa Giani</p>
-                                                <p class="button">Voir le conseil</p>
-                                            </div>
+                        <p>Par notre expert Vanessa Giani</p>
+                        <p class="button">Voir le conseil</p>
+                    </div>
 
-                                        </div>
-                                    </span></div>
-                                <div class="advice ">
-                                    <span
-                                        class="hrl 1321B44AC1CB464248431321B4424F4E4E4349CB1EC1434A4846C243C11EC349431ECAC343C3431E4B431E424543C44A481E4C4AC344C143433F4A24222A2C1321B42A">
+                </div>
+                </span>
+            </div>
+            <div class="advice ">
+                <span class="hrl 1321B44AC1CB464248431321B4424F4E4E4349CB1EC1434A4846C243C11EC349431ECAC343C3431E4B431E424543C44A481E4C4AC344C143433F4A24222A2C1321B42A">
                                         <div class="carousel-block">
                                             <div class="blockGradient">
                                                 <picture>
@@ -1186,15 +1246,15 @@
                                                 <a href="/article/comment-realiser-une-queue-de-cheval-gaufree_a6317/1"
                                                     class="title"><span>Comment réaliser une queue-de-cheval gaufrée
                                                         ?</span></a>
-                                                <p>Par notre expert Vanessa Giani</p>
-                                                <p class="button">Voir le conseil</p>
-                                            </div>
+                <p>Par notre expert Vanessa Giani</p>
+                <p class="button">Voir le conseil</p>
+            </div>
 
-                                        </div>
-                                    </span></div>
-                                <div class="advice ">
-                                    <span
-                                        class="hrl 1321B44AC1CB464248431321B4221E424F49C2434648C21EC04FC3C11EC2431E4E4ACAC346484843C11E4AC443421EC349431E44C14A494C431EC1464B434AC33F4A222B252A1321B42A">
+        </div>
+        </span>
+    </div>
+    <div class="advice ">
+        <span class="hrl 1321B44AC1CB464248431321B4221E424F49C2434648C21EC04FC3C11EC2431E4E4ACAC346484843C11E4AC443421EC349431E44C14A494C431EC1464B434AC33F4A222B252A1321B42A">
                                         <div class="carousel-block">
                                             <div class="blockGradient">
                                                 <picture>
@@ -1213,15 +1273,15 @@
                                                 <a href="/article/3-conseils-pour-se-maquiller-avec-une-frange-rideau_a3481/1"
                                                     class="title"><span>3 conseils pour se maquiller avec une frange
                                                         rideau</span></a>
-                                                <p>Par notre expert Vanessa Giani</p>
-                                                <p class="button">Voir le conseil</p>
-                                            </div>
+        <p>Par notre expert Vanessa Giani</p>
+        <p class="button">Voir le conseil</p>
+    </div>
 
-                                        </div>
-                                    </span></div>
-                                <div class="advice expert-info">
-                                    <span
-                                        class="hrl 1321B443C5C043C1CBC21321B4C44A4943C2C24A1E4C464A49463FCB2C231321B42A">
+    </div>
+    </span>
+    </div>
+    <div class="advice expert-info">
+        <span class="hrl 1321B443C5C043C1CBC21321B4C44A4943C2C24A1E4C464A49463FCB2C231321B42A">
                                         <div class="carousel-block">
                                             <div class="blockGradient">
                                                 <picture>
@@ -1238,18 +1298,18 @@
                                             <div class="info">
                                                 <a href="/experts/vanessa-giani_t75/1" class="title"><span>L’expert du
                                                         mois</span></a>
-                                                <div class="desc">
-                                                    <p>Vanessa Giani</p>
-                                                    <p>Responsable formation</p>
-                                                    <p class="button">Découvrez l’expert du mois</p>
-                                                </div>
-                                            </div>
+        <div class="desc">
+            <p>Vanessa Giani</p>
+            <p>Responsable formation</p>
+            <p class="button">Découvrez l’expert du mois</p>
+        </div>
+    </div>
 
-                                        </div>
-                                    </span></div>
-                                <div class="advice ">
-                                    <span
-                                        class="hrl 1321B44AC1CB464248431321B4424543C443C3C51E4ACBCB4A424543C21ECB4FC3C21E494FC21E424F49C2434648C21E424F464444C3C143C23F4A21252C2C1321B42A">
+    </div>
+    </span>
+    </div>
+    <div class="advice ">
+        <span class="hrl 1321B44AC1CB464248431321B4424543C443C3C51E4ACBCB4A424543C21ECB4FC3C21E494FC21E424F49C2434648C21E424F464444C3C143C23F4A21252C2C1321B42A">
                                         <div class="carousel-block">
                                             <div class="blockGradient">
                                                 <picture>
@@ -1267,15 +1327,15 @@
                                                 <a href="/article/cheveux-attaches-tous-nos-conseils-coiffures_a2877/1"
                                                     class="title"><span>Cheveux attachés : tous nos conseils
                                                         coiffures</span></a>
-                                                <p>Par notre expert Vanessa Giani</p>
-                                                <p class="button">Voir le conseil</p>
-                                            </div>
+        <p>Par notre expert Vanessa Giani</p>
+        <p class="button">Voir le conseil</p>
+    </div>
 
-                                        </div>
-                                    </span></div>
-                                <div class="advice ">
-                                    <span
-                                        class="hrl 1321B44AC1CB464248431321B4424F484FC14ACB464F491E41484F494B431E42454F46C246C2C243CD1E484A1E49C34A4942431E4B431E41484F494B1E444A46CB431EC04FC3C11EC44FC3C23F4A242425261321B42A">
+    </div>
+    </span>
+    </div>
+    <div class="advice ">
+        <span class="hrl 1321B44AC1CB464248431321B4424F484FC14ACB464F491E41484F494B431E42454F46C246C2C243CD1E484A1E49C34A4942431E4B431E41484F494B1E444A46CB431EC04FC3C11EC44FC3C23F4A242425261321B42A">
                                         <div class="carousel-block">
                                             <div class="blockGradient">
                                                 <picture>
@@ -1294,15 +1354,15 @@
                                                 <a href="/article/coloration-blonde-choisissez-la-nuance-de-blond-faite-pour-vous_a6689/1"
                                                     class="title"><span>Coloration blonde : choisissez la nuance de
                                                         blond faite pour vous</span></a>
-                                                <p>Par notre expert Vanessa Giani</p>
-                                                <p class="button">Voir le conseil</p>
-                                            </div>
+        <p>Par notre expert Vanessa Giani</p>
+        <p class="button">Voir le conseil</p>
+    </div>
 
-                                        </div>
-                                    </span></div>
-                                <div class="advice ">
-                                    <span
-                                        class="hrl 1321B44AC1CB464248431321B4454F4E4E431E424F4E4E4349CB1EC2C34148464E43C11EC44FCBC1431E424543C44348C3C1431EC04F46C4C1431E43CB1EC243483F4A2423262C1321B42A">
+    </div>
+    </span>
+    </div>
+    <div class="advice ">
+        <span class="hrl 1321B44AC1CB464248431321B4454F4E4E431E424F4E4E4349CB1EC2C34148464E43C11EC44FCBC1431E424543C44348C3C1431EC04F46C4C1431E43CB1EC243483F4A2423262C1321B42A">
                                         <div class="carousel-block">
                                             <div class="blockGradient">
                                                 <picture>
@@ -1321,58 +1381,55 @@
                                                 <a href="/article/homme-comment-sublimer-votre-chevelure-poivre-et-sel_a6597/1"
                                                     class="title"><span>Homme : comment sublimer votre chevelure poivre
                                                         et sel ?</span></a>
-                                                <p>Par notre expert Vanessa Giani</p>
-                                                <p class="button">Voir le conseil</p>
-                                            </div>
+        <p>Par notre expert Vanessa Giani</p>
+        <p class="button">Voir le conseil</p>
+    </div>
 
-                                        </div>
-                                    </span></div>
-                            </div>
+    </div>
+    </span>
+    </div>
+    </div>
 
-                            <div class="wide78 padding">
-                                <a href="/experts" class="moreNews">Voir plus de conseils d’experts</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-               
-
-                <div id="expertBlock" class="hpExpertBlock">
-                    <div class="wide78">
-                      
-                    </div>
-                </div>
-                <script>
-                    // WB.utils.sortNews();
-                    WB.utils.socialWall();
-                </script>
-<!-- Footer -->
-<footer class="page-footer font-small blue pt-4 footer_bg_color">
+    <div class="wide78 padding">
+        <a href="/experts" class="moreNews">Voir plus de conseils d’experts</a>
+    </div>
+    </div>
+    </div>
+    </div>
 
 
-    <div class="container-fluid text-center text-md-left">
-  
- 
-      <div class="row">
-  
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-  
-          <img src="img/logo2.png" alt="logo">
+
+    <div id="expertBlock" class="hpExpertBlock">
+        <div class="wide78">
+
         </div>
-        <!-- Grid column -->
-  
-      
-        <!-- Grid column -->
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-  
-            <a href="https://reservations.jeanlouisdavid.com"
-            class=" buttonFooterBooking buttonFooter--red  foeter-but mr-5" target="_blank">
-            <div class="mt-3">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px"
-                    height="20px" viewBox="0 0 485.213 485.212"
-                    style="enable-background:new 0 0 20 20;" xml:space="preserve">
+    </div>
+    <script>
+        // WB.utils.sortNews();
+        WB.utils.socialWall();
+    </script>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue pt-4 footer_bg_color">
+
+
+        <div class="container-fluid text-center text-md-left">
+
+
+            <div class="row">
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+
+                    <img src="img/logo2.png" alt="logo">
+                </div>
+                <!-- Grid column -->
+
+
+                <!-- Grid column -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+
+                    <a href="https://reservations.jeanlouisdavid.com" class=" buttonFooterBooking buttonFooter--red  foeter-but mr-5" target="_blank">
+                        <div class="mt-3">
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 485.213 485.212" style="enable-background:new 0 0 20 20;" xml:space="preserve">
                     <g>
                         <path d="M60.652,75.816V15.163C60.652,6.781,67.433,0,75.817,0c8.38,0,15.161,6.781,15.161,15.163v60.653
         c0,8.38-6.781,15.161-15.161,15.161C67.433,90.978,60.652,84.196,60.652,75.816z M318.424,90.978
@@ -1391,88 +1448,92 @@
         C424.562,370.692,417.781,363.906,409.399,363.906z" />
                     </g>
                 </svg>
-                <p>დანიშნეთ შეხვედრა</p>
-                
-            </div>
-        </a>
-          
-  
-        </div>
-        <!-- Grid column -->
-  
-        <!-- Grid column -->
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-  
-            <div class="widget flicker_widget clearfix">
-                <h3 class="widget-title text-light">კონტაქტი</h3>
-                <div class="textwidget widget-text">
-                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style3 d-flex">
-                         <div class="featured-icon">
-                             <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-sm">
-                                 <i class="fa fa-map-marker text-light"></i>
-                             </div>
-                         </div>
-                         <div class="featured-content">
-                             <div class="featured-desc adres_p text-light ml-3">
-                                 <p>თბილისი</p>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style3 d-flex">
-                         <div class="featured-icon">
-                             <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-sm">
-                                 <i class="fa fa-envelope-o text-light"></i>
-                             </div>
-                         </div>
-                         <div class="featured-content">
-                             <div class="featured-desc text-light ml-3">
-                                 <p>info@gmail.com</p>
-                             </div>
-                         </div>
-                     </div>
-                     <div class="featured-icon-box icon-align-before-content icon-ver_align-top style3 d-flex">
-                         <div class="featured-icon">
-                             <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-sm">
-                                 <i class="fa fa-phone text-light"></i>
-                             </div>
-                         </div>
-                         <div class="featured-content">
-                             <div class="featured-desc text-light ml-3">
-                                 <p>(+995)555 555 555</p>
-                             </div>
-                         </div>
-                     </div>
-                     
-                 </div>
-             </div>
-          </ul>
-  
-        </div>
-        <!-- Grid column -->
-  
-      </div>
-      <!-- Grid row -->
-  
-    </div>
-    <!-- Footer Links -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3 text-light">© 2020 Copyright By ITtoday.ge 
-      <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
-            
-                </div><!-- /wb_footer -->
-            </div><!-- /wb_contents -->
-        </div><!-- /wb_wrapper -->
+                            <p>დანიშნეთ შეხვედრა</p>
 
-    </div><!-- /wb_body -->
+                        </div>
+                    </a>
+
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+
+                    <div class="widget flicker_widget clearfix">
+                        <h3 class="widget-title text-light">კონტაქტი</h3>
+                        <div class="textwidget widget-text">
+                            <div class="featured-icon-box icon-align-before-content icon-ver_align-top style3 d-flex">
+                                <div class="featured-icon">
+                                    <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-sm">
+                                        <i class="fa fa-map-marker text-light"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-desc adres_p text-light ml-3">
+                                        <p>თბილისი</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-icon-box icon-align-before-content icon-ver_align-top style3 d-flex">
+                                <div class="featured-icon">
+                                    <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-sm">
+                                        <i class="fa fa-envelope-o text-light"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-desc text-light ml-3">
+                                        <p>info@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="featured-icon-box icon-align-before-content icon-ver_align-top style3 d-flex">
+                                <div class="featured-icon">
+                                    <div class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-sm">
+                                        <i class="fa fa-phone text-light"></i>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-desc text-light ml-3">
+                                        <p>(+995)555 555 555</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text_center py-3 text-light">© 2020 Copyright By ITtoday.ge
+            <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    </div>
+    <!-- /wb_footer -->
+    </div>
+    <!-- /wb_contents -->
+    </div>
+    <!-- /wb_wrapper -->
+
+    </div>
+    <!-- /wb_body -->
     <div id="fb-root"></div>
     <script type="text/javascript">
-        window.fbAsyncInit = function () {
+        window.fbAsyncInit = function() {
             FB.init({
                 appId: '354749077913860',
                 version: 'v2.9',
@@ -1489,16 +1550,21 @@
         };
 
         // Load the SDK asynchronously
-        (function (d, s, id) {
+        (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) { return; }
-            js = d.createElement(s); js.id = id; js.async = true;
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.async = true;
             js.src = "//connect.facebook.net/fr_FR/sdk.js";
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
 
-    <script>window.twttr = (function (d, s, id) {
+    <script>
+        window.twttr = (function(d, s, id) {
             var js, fjs = d.getElementsByTagName(s)[0],
                 t = window.twttr || {};
             if (d.getElementById(id)) return t;
@@ -1508,12 +1574,11 @@
             fjs.parentNode.insertBefore(js, fjs);
 
             t._e = [];
-            t.ready = function (f) {
+            t.ready = function(f) {
                 t._e.push(f);
             };
             return t;
         }(document, "script", "twitter-wjs"));
-
     </script>
 
     <script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script>
@@ -1521,22 +1586,34 @@
     <script>
         WB.utils.changeValidator(true);
         WB.siteUrl = 'https://www.jeanlouisdavid.com';
-        (function (i, s, o, g, r, a, m) {
-            i[r] = i[r]; a = s.createElement(o); m = s.getElementsByTagName(o)[0];
-            a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+        (function(i, s, o, g, r, a, m) {
+            i[r] = i[r];
+            a = s.createElement(o);
+            m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m);
         })(window, document, 'script', 'https://static.critizr.com/widgets/preprod/122640e7a478798eca22b4c50b710997.js', 'cz');
 
         CritizrSDK = {};
         CritizrSDK.config = {
             "lang": "fr" // Possible values: fr,pt
         };
-
     </script>
 
     <script type="text/javascript">
-        function _eStat_Whap_loaded_func() { eStatWhap.serial("800000207013"); eStatWhap.send(); }
+        function _eStat_Whap_loaded_func() {
+            eStatWhap.serial("800000207013");
+            eStatWhap.send();
+        }
 
-        (function () { var myscript = document.createElement('script'); myscript.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'w.estat.com/js/whap.js'; myscript.setAttribute('async', 'true'); var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(myscript, s); }
+        (function() {
+                var myscript = document.createElement('script');
+                myscript.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'w.estat.com/js/whap.js';
+                myscript.setAttribute('async', 'true');
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(myscript, s);
+            }
 
         )();
     </script>
